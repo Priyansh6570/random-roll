@@ -1,0 +1,151 @@
+body {
+    margin: 0%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #fff; */
+    text-align: center;
+    background-color: #04081de0;
+    /* background-color: #EA384D; */
+}
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+ .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(9, 3, 3, 0.167);
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+ }
+ .heading {
+    /* width: 50%;
+    height: 120px;
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50px;
+    left: 370px; */
+
+
+    height: 100px;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    place-self: center;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #000000;
+ }
+
+ .heading::before {
+   content: "";
+   background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+   width: calc(95% + 5px);
+   height: calc(90% + -520px);
+   position: absolute;
+   z-index: -1;
+   border-radius: 10px;
+ }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0%;
+    color: #fff;
+ }
+ .card-container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    position: relative;
+    top: 80px;
+    z-index: 11;
+ }
+ .card {
+    width: 200px;
+    height: 260px;
+    /* background-color: rgb(0, 255, 229); */
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11.5px );
+-webkit-backdrop-filter: blur( 11.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }
+ h2 {
+    font-size: 3rem;
+    font-family: cursive;
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+  background-clip: border-box;
+text-shadow: none;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+ }
+         
+button {
+    background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px rgba(55, 55, 55, 0.533);
+    border-radius: 10px;
+    display: block;
+    width: 70vw;
+    margin: 20px auto 80px;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    border: none;
+  }
+
+  button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button:active {
+    opacity: 0.5;
+    scale: 0.99;
+  }
+  #particles-js {
+   background: black;
+   height: 100vh;
+}
